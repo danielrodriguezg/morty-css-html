@@ -1,0 +1,144 @@
+body, div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body{
+      background: #212121;
+    min-height: 100vh;
+  }
+  .pelo{
+    width: 11rem;
+      height: 11rem;
+    background-color: #CD7F32;
+    border-radius: 100%;
+    border: 1px solid black;
+  }
+  .cabeza{
+    width: 11rem;
+    height: 11rem;
+    background: #ffdbac;
+    border-radius: 100%;
+    margin-top: 3rem;
+    display:inline-block;
+    border: 2px solid black;
+  }
+  
+  .cabeza::before{
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top: calc(50% - 10px);
+    transform: translate(-0.5rem);
+    border-radius: 15px 0 0 15px;
+    background: #ffdbac;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .cabeza::after{
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    border-radius: 0 15px 15px 0;
+    background: #ffdbac;
+    transform: translate(10.7rem);
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .ojos{
+    gap: 1rem;
+    top: 30%
+  }
+  .parpado{
+    width: 4rem;
+    height: 2rem;
+    margin-top: 3.5rem;
+    background-color: #ffdbac;
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid black;
+  }
+  .ojo1::before{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    transform: rotate(-10deg);
+    top: -1rem;
+    left:-1rem;
+    background-color: #ffdbac;
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid black;
+  }
+  .ojo2::before{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    transform: rotate(10deg);
+    top: -1rem;
+    left: 1rem;
+    background-color: #ffdbac;
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid black;
+  }
+  .pupila{
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: black;
+    margin-top: -1rem;
+    border-radius: 100%;
+    
+  }
+  
+  .ojo1, .ojo2{
+    margin-top: -1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+  }
+  .ojo1{
+      border-right: 1px solid black;
+  }
+  .ojo2{
+      border-left: 1px solid black;
+  }
+  .nariz{
+    width: 1.2rem;
+    height: 0.7rem;
+    top: 25%;
+    left: calc(50% + 0.01rem);
+    border-radius: 0 100% 100% 0;
+    transform: rotate(30deg);
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background: #ffdbac;
+  }
+  .boca{
+    width: 4rem;
+    height: 1rem;
+    background: #7a1b0c;
+    top: 40%;
+    left: calc(50% - 2rem);
+    border-radius: 30% / 70%;
+    gap: 4px;
+    overflow: hidden;
+    border: 1px solid black;
+  }
+  .diente{
+    top: -7px;
+    width: 7px;
+    height: 5px;
+    background: white;
+    border-radius: 0 0 30px 30px;
+    border: 1px solid black;
+  }

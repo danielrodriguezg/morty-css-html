@@ -1,0 +1,13 @@
+{
+  "name": "morty-css-html",
+  "version": "1.0.0",
+  "description": "Morty dibujado con CSS y HTML",
+  "scripts": {
+    "start": "live-server ./ " 
+  },
+  "author": "danielrodriguezg",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
